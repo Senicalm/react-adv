@@ -1,0 +1,96 @@
+[
+    {
+        "type":"text",
+        "name":"firstName",
+        "placeholder":"Nombre",
+        "label":"Nombre",
+        "value":"",
+        "validations":{
+            "type":"string",
+            "rules":[{
+                "type":"required",
+                "desc":"Requerido",
+                "value":""
+            },
+            {
+                "type":"minLength",
+                "desc":"",
+                "value":["2"]
+            }]
+        }
+    },
+    {
+        "type":"text",
+        "name":"lastName",
+        "placeholder":"Apellido",
+        "label":"Apellido",
+        "value":"",
+        "validations":{
+            "type":"string",
+            "rules":[{
+                "type":"required",
+                "desc":"Requerido",
+                "value":""
+            }]
+        }
+    },
+    {
+        "type":"email",
+        "name":"email",
+        "placeholder":"Email",
+        "label":"Email",
+        "value":"",
+        "validations":{
+            "type":"string",
+            "rules":[
+            {
+                "type":"required",
+                "desc":"Requerido",
+                "value":""
+            },
+            {
+                "type":"email",
+                "desc":"Formato no válido.",
+                "value":""
+            }]
+        }
+    },
+    {
+        "type":"select",
+        "name":"favoriteGame",
+        "placeholder":"",
+        "label":"Favorite Game",
+        "value":"",
+        "options":[
+            {"id":"1","label":"Super smash"},
+            {"id":"2","label":"Metal Gear"},
+            {"id":"3","label":"Resident Evil"}
+        ],
+        "validations":{
+            "type":"string",
+            "rules":[
+            {
+                "type":"required",
+                "desc":"Requerido",
+                "value":""
+            }]
+        }
+    },
+    {
+        "type":"checkbox",
+        "name":"remember",
+        "placeholder":"",
+        "label":"Remember",
+        "value":false,
+        "options":[],
+        "validations":{
+            "type":"boolean",
+            "rules":[
+            {
+                "type":"oneOf",
+                "desc":"Debe estar checkeado",
+                "value":[true]
+            }]
+        }
+    }
+]
